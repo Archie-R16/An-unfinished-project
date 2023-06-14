@@ -1,0 +1,69 @@
+main{
+    width: 1920px;
+    height: 719px;
+    .main-header {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
+        height: 719px;
+        background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
+        .header__photo1 {
+            img {
+                padding-bottom: 60px;
+            }
+        }
+        .header__poragrof {
+            padding-left: 120px;
+            padding-bottom: 100px;
+            .logo {
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                text-transform: capitalize;
+            }
+            .tatle {
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 58px;
+                line-height: 79px;
+                span {
+                    color: $green;
+                }
+            }
+            .text {
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+            }
+            .button {
+                display: flex;
+                align-items: center;
+                button {
+                    @include buttonMain
+                }
+                p {
+                    font-family: 'Nunito';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 30px;
+                    padding-left: 25px;
+                }
+                img {
+                    padding-left: 10px;
+                    padding-top: 3px;
+                }
+            }
+            .tim {
+                @include divTexButton
+            }
+        }
+    }
+}

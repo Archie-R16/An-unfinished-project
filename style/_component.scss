@@ -1,0 +1,247 @@
+@mixin displaiFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexDirectionColumn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+@mixin buttonMain {
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $green;
+    border-radius: 5px;
+    color: $white;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        background-color: $red;
+        color: $dark;
+    }
+}
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin cartFirst {
+    width: 330px;
+    height: 366px;
+    // margin-bottom: 30px;
+    padding: 0px 43px 0px 0px;
+    margin-bottom: 30px;
+    box-shadow: 5px 15px 20px rgb(213, 206, 206);
+    h4 {
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        text-transform: capitalize;
+        padding-top: 50px;
+    }
+    p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        padding: 10px 42px 59.5px 42px;
+    }
+}
+@mixin workCart {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 330px;
+    height: 408px;
+    background-color: $green;
+    border-radius: 10px;
+    .item-img {
+        @include displaiFlex;
+        justify-content: space-between;
+        margin-top: 50px;
+        width: 270px;
+        height: 80px;
+    }
+    .item-text {
+        width: 271px;
+        height: 173px;
+        margin-bottom: 70px;
+        .text-h4 {
+            width: 271px;
+            font-family: "Nunito";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            text-transform: capitalize;
+            color: $white;
+        }
+        .text-p {
+            width: 270px;
+            font-family: "Nunito";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: $white;
+            text-align: start;
+        }
+    }
+}
+@mixin workCart-1 {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 330px;
+    height: 408px;
+    background-color: $green;
+    border-radius: 10px;
+    .item-img {
+        @include displaiFlex;
+        justify-content: space-between;
+        margin-top: 50px;
+        width: 270px;
+        height: 80px;
+    }
+    .item-text {
+        width: 271px;
+        height: 173px;
+        margin-bottom: 70px;
+        .text-h4 {
+            width: 271px;
+            font-family: "Nunito";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            text-transform: capitalize;
+        }
+        .text-p {
+            width: 270px;
+            font-family: "Nunito";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: start;
+        }
+    }
+}
+@mixin teamCards {
+    margin-left: 30px;
+    width: 330px;
+    height: 408px;
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+    .item {
+        width: 330px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(
+            6.68deg,
+            #00730c 4.95%,
+            rgba(251, 246, 238, 0) 264.79%
+        );
+        border-radius: 10px;
+        .taitle {
+            width: 139px;
+            height: 114px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h3 {
+                font-family: "Nunito";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33px;
+                text-transform: capitalize;
+                color: $white;
+            }
+            h4 {
+                font-family: "Nunito";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                color: $white;
+            }
+        }
+    }
+}
+@mixin divTexButton {
+    display: flex;
+    width: 467px;
+    height: 50px;
+    margin-top: 50px;
+    .circule {
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        padding: 8px;
+        background: linear-gradient(72.71deg, #00730c -83.5%, #f9f9f9 93.84%);
+        border-radius: 35px;
+        border: none;
+        text-align: center;
+    }
+    p {
+        padding-left: 10px;
+    }
+    div {
+        display: flex;
+    }
+}
+
+@mixin frameDivTexButton {
+    display: flex;
+    flex-wrap: wrap;
+    .circule {
+        width: 67px;
+        height: 67px;
+        border-radius: 54px;
+        padding: 8px;
+        background: $green;
+        margin: 20px;
+        border: none;
+    }
+    p {
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        text-transform: capitalize;
+        padding-left: 30px;
+    }
+    div {
+        display: flex;
+        width: 300px;
+        align-items: center;
+    }
+}

@@ -1,0 +1,62 @@
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1920px;
+    height: 937px;
+    .img {
+        width: 693px;
+        height: 903px;
+        .one {
+            width: 601px;
+            height: 741px;
+            transform: translate(24px, -670px);
+        }
+        .second {
+            transform: translate(193px, -859px);
+            background-color: #FFFFFF;
+            padding: 20px;
+            }
+        div {
+            width: 450px;
+            height: 706px;
+            background-color: $green;
+        }
+    }
+    .tatle {
+        width: 690px;
+        height: 814px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        h3 {
+            align-items: flex-end;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 45px;
+            line-height: 61px;
+            span {
+                color: $green;
+            }
+        }
+        p {
+            width: 566px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+        }
+        .frame-tim {
+            @include frameDivTexButton
+        }
+        button {
+            @include buttonMain;
+            margin-top: 50px;
+        }
+    }
+
+}

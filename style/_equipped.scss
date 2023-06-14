@@ -1,0 +1,31 @@
+.equipped {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    div {
+        width: 1410px;
+        height: 247px;
+        display: flex;
+        justify-content: end;
+        margin-top: 100px;
+        background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
+        div {
+            width: 703px;
+            height: 90px;
+            background: none;
+            align-items: center;
+            margin-right: 60px;
+            h3 {
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 33px;
+                line-height: 45px;
+                color: #a51212;
+            }
+            button {
+                @include buttonMain;
+            }
+        }
+    }
+}
